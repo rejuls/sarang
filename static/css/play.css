@@ -1,0 +1,64 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 150px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  padding: 15px;
+  background-color: #4e5d6c;
+  text-align: center;
+  color: white;
+}
+
+
+.tabContent{
+  padding: 8px;
+}
+
+.navbar-brand{
+  font-family: 'PT Sans', sans-serif;
+}
+
+.nav-tabs{
+  margin-right: 15%;
+}
+
+.qn{
+  padding-left: 2%;
+  padding-top: 1%;
+}
+
+.qn-clue{
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.carousel {
+  margin-bottom: 5%;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element
+.carousel .item {
+  height: 400px;
+  background-color: #777;
+}*/
+
+.fblike{
+  background-color: #bab8b5
+}
+
+.fbliketext{
+  color: black;
+}
