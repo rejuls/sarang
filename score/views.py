@@ -9,5 +9,6 @@ def Match_list(request):
     nm=match[1]
     return render(request, 'home.html', {'match':match,'cm':cm,'nm':nm})
 
-def Results(request):
+def Results_list(request):
+    match=Match.objects.order_by('-id')
     return render(request, 'results.html', {'match':match})

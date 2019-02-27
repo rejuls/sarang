@@ -9,4 +9,6 @@ from django.conf.urls.static import static
 urlpatterns = [
 
     path('', views.Match_list, name='Match'),
+    path('results/', views.Results_list, name='Result'),
+
 ]

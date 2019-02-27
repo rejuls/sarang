@@ -23,4 +23,5 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('score.urls')),
+    path('results/', include('score.urls')),
 ]

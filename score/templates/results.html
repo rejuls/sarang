@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static i18n %}
+{% block title %}Members{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h2>Results</h2>
+
+  <table class="table table-striped table-hover ">
+  <thead>
+    <tr>
+      <th>Match No</th>
+      <th>Team 1</th>
+      <th>Score</th>
+      <th>Score</th>
+      <th>Team 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for m in match %}
+      <tr>
+      <td>{{m.match_num}}</td>
+      <td>{{m.t1}}</td>
+      <td>{{m.t1_score}}</td>
+      <td>{{m.t2_score}}</td>
+      <td>{{m.t1}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endblock content %}

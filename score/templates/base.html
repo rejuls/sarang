@@ -41,7 +41,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">ENIGMA EX</a>
+        <a class="navbar-brand" href="/">SARANG MEMORIAL 2019</a>
       </div>
 
       <div id="navbar" class="collapse navbar-collapse">
@@ -49,32 +49,23 @@
         <ul class="nav navbar-nav">
           <li ><a href="https://excelsiorgec.me">EXCELSIOR'19</a></li>
           <li ><a href="/leaderboard">Leaderboard</a></li>
-          {% if request.user.is_authenticated %}
-          <li ><a href="/play">PLAY</a></li>
-          {% else %}
-          <li ><a href="/#login">LOGIN</a></li>
-          {% endif %}
+
           <!--<li ><a href="http://www.facebook.com/Inventogec.in">In doubt? Message us here</a></li>-->
           <li ><a href="/#about">RULES</a></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
 
-          {% if user.is_authenticated %}
 
           <li class="dropdown" id="account_dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-              Welcome, {{user.first_name}} {{user.last_name}}
+              Welcome,
               <span class="caret"></span>
             </a>
-            <ul class="dropdown-menu">
-              <li><a href="/accounts/logout">Logout</a></li>
-            </ul>
+
           </li>
 
-          {% else %}
-          <li id="login"><a href="/#login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-          {% endif %}
+
 
         </ul>
 
