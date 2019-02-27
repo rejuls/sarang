@@ -8,5 +8,5 @@ from django.conf.urls.static import static
 
 urlpatterns = [
 
-    path('', TemplateView.as_view(template_name='home.html'), name='home'),
+    path('', views.Match_list, name='Match'),
 ]

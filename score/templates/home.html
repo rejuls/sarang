@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -62,15 +61,6 @@
             <a class="page-scroll" href="#about">RULES</a>
           </li>
           <li>
-            <a class="page-scroll" href="#login">
-            {% if request.user.is_authenticated %}
-              PLAY
-            {% else %}
-            LOGIN
-            {% endif %}
-            </a>
-          </li>
-          <li>
             <a class="page-scroll" href="/leaderboard">Leaderboard</a>
           </li>
           <li>
@@ -88,10 +78,36 @@
           <div class="col-md-8 col-md-offset-2">
           <!--   <img src="/static/images/enex.png" class="img-responsive">
          <small class="text-muted">β</small></h1> -->
-          
+
               <!--<a href="#about" class="btn btn-circle page-scroll">
-                <i class="fa fa-angle-double-down animated"></i>-->
-              </a>
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>-->
+              <br>
+              Current Match
+              <br>
+              {{ cm.round }}
+              <br>
+              Match Number: {{ cm.match_num }}
+              <br>
+              {{ cm.t1 }} VS {{ cm.t2 }}
+              <br>
+              {{ cm.t1_score }} - {{ cm.t2_score }}
+              <br><br><br>
+
+              Next Match
+              <br>
+              {{ nm.round }}
+              <br>
+              Match Number: {{ nm.match_num }}
+              <br>
+              {{ nm.t1 }} VS {{ nm.t2 }}
+              <br>
+              {{ nm.t1_score }} - {{ nm.t2_score }}
+              <br>
+              <br>
+
+<button class="btn btn-primary" onclick="location.reload();">Refresh Page</button>
+
             </div>
           </div>
         </div>
