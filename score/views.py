@@ -10,5 +10,5 @@ def Match_list(request):
     return render(request, 'home.html', {'match':match,'cm':cm,'nm':nm})
 
 def Results_list(request):
-    match=Match.objects.order_by('-id')
+    match=Match.objects.order_by('-id')[2:]
     return render(request, 'results.html', {'match':match})
