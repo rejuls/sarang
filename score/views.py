@@ -11,4 +11,5 @@ def Match_list(request):
 
 def Results_list(request):
     match=Match.objects.order_by('-id')[2:]
-    return render(request, 'results.html', {'match':match})
+    curr=match[0]
+    return render(request, 'results.html', {'match':match,'curr':curr})
