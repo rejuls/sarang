@@ -13,8 +13,12 @@
 }
 
 .score{
+  font-size:1000%;
+}
+.scoret{
   font-size:400%;
 }
+
 @media (max-width: 767px) {
 .intro{
   background: url(../images/beckham.jpg) no-repeat center center fixed;
@@ -33,6 +37,9 @@ h4{
   margin:0 0 20px;
 }
 .score{
+  font-size:400%;
+}
+.scoret{
   font-size:300%;
 }
 }
